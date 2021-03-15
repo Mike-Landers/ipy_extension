@@ -11,7 +11,7 @@ To run the code:
 python3 find_ip_in_ripe_cidrs.py --ip [IP Address]  
 
 Example usage and output:
-  pip3 install -r requirements.txt
+  pip3 install -r requirements.txt  
   python3 find_ip_in_ripe_cidrs.py --ip 199.7.65.255  
   checking command line args...  
   getting CIDRs from RIPE...  
@@ -24,4 +24,4 @@ Example usage and output:
   IP Address 199.7.65.255 FOUND within CIDR IPSet([IP('199.7.65.0/24')])  
   
 To run the unit tests:  
-python3 -m unittest test_ipy_extension.py
+python3 -m unittest test_ipy_extension.py  
