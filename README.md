@@ -7,11 +7,13 @@ ipy_extension.py - extends the IPy library to search a list of CIDRs for a match
 requirements.txt - for installing requirements  
 test_ipy_extension.py - contains unit tests using the unittest library. limited unit tests since most of the code deals with parsing. note- these unit tests aren't intended to be complete, but more of a reasonable sanity check that things are working as expected.  
 
-To run the code:  
+#1. Install the Requirements:  
+pip3 install -r requirements.txt  
+
+#2. Run the code:  
 python3 find_ip_in_ripe_cidrs.py --ip [IP Address]  
 
-Example usage and output:
-  pip3 install -r requirements.txt  
+Example usage and output:  
   python3 find_ip_in_ripe_cidrs.py --ip 199.7.65.255  
   checking command line args...  
   getting CIDRs from RIPE...  
@@ -23,5 +25,5 @@ Example usage and output:
   completed checking 41738/59960 CIDR ranges  
   IP Address 199.7.65.255 FOUND within CIDR IPSet([IP('199.7.65.0/24')])  
   
-To run the unit tests:  
+#3. To run the unit tests (ensure the requirements have been installed first):  
 python3 -m unittest test_ipy_extension.py  
