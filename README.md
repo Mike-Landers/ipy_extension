@@ -1,5 +1,7 @@
 # ipy_extension
-extends the functionality of the IPy library (https://github.com/autocracy/python-ipy/) to find an IP within a list of CIDRs
+Extends the functionality of the IPy library (https://github.com/autocracy/python-ipy/) to find an IP within a list of CIDRs.  
+An example use case of ipy_extension which uses JSON data requested from the RIPE network is provided.  
+Utilizes external libraries: argparse, requests, IPy  
 
 file descriptions:  
 find_ip_in_ripe_cidrs.py - utilizes my extension of the IPy library and parses the necessary inputs  
@@ -25,5 +27,5 @@ Example usage and output:
   completed checking 41738/59960 CIDR ranges  
   IP Address 199.7.65.255 FOUND within CIDR IPSet([IP('199.7.65.0/24')])  
   
-#3. To run the unit tests (ensure the requirements have been installed first):  
+#3. Run the unit tests:  
 python3 -m unittest test_ipy_extension.py  
