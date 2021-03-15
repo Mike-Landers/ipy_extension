@@ -20,11 +20,6 @@ Example usage and output:
   checking command line args...  
   getting CIDRs from RIPE...  
   searching CIDRs for matching IP...  
-  completed checking 10000/59960 CIDR ranges  
-  completed checking 20000/59960 CIDR ranges  
-  completed checking 30000/59960 CIDR ranges  
-  completed checking 40000/59960 CIDR ranges  
-  completed checking 41738/59960 CIDR ranges  
   IP Address 199.7.65.255 FOUND within CIDR IPSet([IP('199.7.65.0/24')])  
   
 #3. Run the unit tests:  
