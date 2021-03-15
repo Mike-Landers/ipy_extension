@@ -8,10 +8,11 @@ requirements.txt - for installing requirements
 test_ipy_extension.py - contains unit tests using the unittest library. limited unit tests since most of the code deals with parsing. note- these unit tests aren't intended to be complete, but more of a reasonable sanity check that things are working as expected.  
 
 To run the code:  
-python find_ip_in_ripe_cidrs.py --ip <IP Address>  
+python3 find_ip_in_ripe_cidrs.py --ip [IP Address]  
 
-Example usage and output:  
-  python find_ip_in_ripe_cidrs.py --ip 199.7.65.255  
+Example usage and output:
+  pip3 install -r requirements.txt
+  python3 find_ip_in_ripe_cidrs.py --ip 199.7.65.255  
   checking command line args...  
   getting CIDRs from RIPE...  
   searching CIDRs for matching IP...  
@@ -23,4 +24,4 @@ Example usage and output:
   IP Address 199.7.65.255 FOUND within CIDR IPSet([IP('199.7.65.0/24')])  
   
 To run the unit tests:  
-python -m unittest test_ipy_extension.py
+python3 -m unittest test_ipy_extension.py
